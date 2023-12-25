@@ -1,0 +1,121 @@
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header {
+    
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    position: sticky;
+   
+    z-index: 100;
+   
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+}
+.header:hover::before {
+    left: 100%;
+}
+.logo {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    padding-left: 20px;
+}
+.navbar a {
+    
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover {
+    color: #f00;
+}
+
+
+body {
+    
+    
+    font-family: 'Arial', sans-serif;
+    
+}
+.ct {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    }
+
+
+
+section {
+    width: 50%;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+
+}
+
+section h1,
+section h3 {
+    color: #333; /* Adjust text color */
+}
+
+section a {
+    color: #007bff; /* Adjust link color */
+    text-decoration: none;
+}
+
+section iframe,
+section p {
+    margin: 20px 0;
+}
+
+section img {
+    margin-right: 10px;
+}
+
+textarea, input {
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
